@@ -7,51 +7,10 @@ img.addEventListener('load', () => {
   // TODO
 
   // Some helpful tips:
-  // - Fill the Canvas with black first to add borders on non-square images, then draw on top
+  // - Fill the whole Canvas with black first to add borders on non-square images, then draw on top
   // - Clear the form when a new image is selected
   // - If you draw the image to canvas here, it will update as soon as a new image is selected
 });
-
-// Event listener, changes the picture dynamically as soon as a user selects an image
-// TODO
-
-// Event listener, Adds meme text to the top and bottom of image on form submission
-// TODO
-
-// Event listener, resets the form back to default and clears the canvas upon button press
-// TODO
-
-// Event listener, changes the slider icon based on volume level, simultaneously changes the
-// output volume of the vocalizer to match
-// TODO
-
-// Event listener, takes the current text and vocalizes it when button is clicked
-// TODO
-
-/**
- * Draws the user inputted text to the top and bottom of the canvas image
- * @param {canvas context} context - The canvas context which to draw the text on
- * @param {string} textTop - The top line(s) of text to add to the canvas
- * @param {string} textBottom - The bottom line(s) of text to add to the canvas
- */
-function addTextToCanvas(context, textTop, textBottom) {
-  // TODO
-}
-
-/** 
- * Clears everything drawn on the given canvas context
- * @param {canvas context} context - The canvas context which to clear
-*/
-function clearCanvas(context) {
-  // TODO
-}
-
-/**
- * Toggles enabling / disabled the submit & clear buttons
- */
-function toggleFormButtons() {
-  // TODO
-}
 
 /**
  * Takes in the dimensions of the canvas and the new image, then calculates the new
@@ -65,8 +24,8 @@ function toggleFormButtons() {
  * Canvas. These coordinates align with the top left of the image.
  */
 function getDimmensions(canvasWidth, canvasHeight, imageWidth, imageHeight) {
-  let apsectRatio, height, width, startX, startY;
-  
+  let aspectRatio, height, width, startX, startY;
+
   // Get the aspect ratio, used so the picture always fits inside the canvas
   aspectRatio = imageWidth / imageHeight;
 
