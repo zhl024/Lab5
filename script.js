@@ -1,8 +1,6 @@
 // script.js
 
-const speechUtterance = new SpeechSynthesisUtterance(); // The synthesizer that will produce voice to text
 const img = new Image(); // used to load image from <input> and draw to canvas
-let submitted = false; // Used to keep track of whether or not a meme has been generated
 
 // Fires whenever the img object loads a new image (such as with img.src =)
 img.addEventListener('load', () => {
@@ -68,7 +66,7 @@ function toggleFormButtons() {
  */
 function getDimmensions(canvasWidth, canvasHeight, imageWidth, imageHeight) {
   // Get the aspect ratio, used so the picture always fits inside the canvas
-  aspectRatio = imageWidth / imageHeight;
+  let aspectRatio = imageWidth / imageHeight;
 
   // If the apsect ratio is less than 1 it's a verical image
   if (aspectRatio < 1) {
