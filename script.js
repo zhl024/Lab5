@@ -65,8 +65,10 @@ function toggleFormButtons() {
  * Canvas. These coordinates align with the top left of the image.
  */
 function getDimmensions(canvasWidth, canvasHeight, imageWidth, imageHeight) {
+  let apsectRatio, height, width, startX, startY;
+  
   // Get the aspect ratio, used so the picture always fits inside the canvas
-  let aspectRatio = imageWidth / imageHeight;
+  aspectRatio = imageWidth / imageHeight;
 
   // If the apsect ratio is less than 1 it's a verical image
   if (aspectRatio < 1) {
