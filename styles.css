@@ -55,7 +55,7 @@ main canvas {
   background-color: lightgray;
   display: grid;
   grid-template-rows: 13% 87%;
-  height: 715px;
+  height: 750px;
   justify-items: center;
   width: 500px;
 }
