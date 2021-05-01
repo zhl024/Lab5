@@ -11,4 +11,5 @@ https://zhl024.github.io/Lab5/
 
 ## Part 2:
 
-LINK TO YOUR PART 2 REPOSITORY
+LINK TO YOUR PART 2 REPOSITORY 
+https://github.com/zhl024/github-actions-for-ci
